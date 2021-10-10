@@ -1,0 +1,139 @@
+/*ESTRUCTURA*/
+
+*{
+    margin:0%;
+    padding:0%;
+}
+
+header{
+    background-color: black;
+    height: 30%;
+    text-align: center;
+}
+
+
+footer{
+    height: auto;
+}
+
+.texto-footer{
+    font-size: 20px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+    .texto-footer-btn{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
+
+/*TÍTULOS, SUBTÍTULOS Y TEXTO*/
+
+h1{
+    @include propiedades-texto ($fuente1,auto,$color-fuente);
+    font-weight: bold;
+}
+
+h2{
+    @include propiedades-texto ($fuente2,20rem,$color-fuente);
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+h3{
+    @extend h2;
+    @include propiedades-texto ($fuente2,5rem,$color-fuente);
+}
+
+
+h4{
+    @extend h2;
+    @include propiedades-texto ($fuente2,2rem,$color-fuente);
+}
+
+.titulo{
+    @include propiedades-texto ($fuente2,45px,$color-fuente);
+    @extend h2;
+    opacity: 1;
+    background-color: black;
+    opacity: 0.8;
+    border: none;
+}
+
+    .subtitulo{
+        @include propiedades-texto ($fuente2,25px,$color-fuente2);
+        @extend h2;
+        opacity: 1;
+        border: none;
+        
+    }
+
+        .texto-musica{
+            @extend h2;
+            @include propiedades-texto ($fuente2,20px,$color-fuente);
+            font-style: italic;
+            background-color: transparent;
+            border: none
+        }
+
+.titulo-tienda1{
+    @include propiedades-texto ($fuente2,45px,$color-fuente);
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    opacity: 1;
+    background-color: black;
+    opacity: 0.8;
+    border: none;
+}
+
+/*Navegador*/
+
+/*Modificación para Bootstrap*/
+
+.nav-bts{
+    @include propiedades-texto ($fuente2,18px,$color-fuente);
+    background-color: black;
+}
+
+
+/*Backgrounds - Main*/
+
+
+video{ 
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    object-fit: cover;
+}
+
+#fondo-home{
+    background-image: url(img/fondos/LDRfondohome.jpg);
+    background-size: cover;
+}
+
+
+#fondo-noticias{
+    background-image: url(img/fondos/LDRfondonoticias.jpg);
+    background-size: cover;
+}

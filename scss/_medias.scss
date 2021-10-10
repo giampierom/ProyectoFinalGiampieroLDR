@@ -1,0 +1,230 @@
+/*MEDIA QUERY PARA HOME*/
+@media only screen and (max-width: 992px){
+
+    main{
+        background-color: rgb(235, 232, 216);
+    }
+    
+    h1{
+        color: $color-fuente;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 80rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    h2{
+        color: $color-fuente2;
+    }
+    
+    h3{
+        color: $color-fuente2;
+    }
+    
+    h4{
+        color: $color-fuente2;
+    }
+    
+    #home-div1{
+        justify-content: center;
+        align-content: center;
+    }
+    
+    
+    #home-div2{
+        height: auto;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    }
+    
+    
+    /*MEDIA QUERY PARA MUSICA*/
+
+@media (min-width: 992px) {
+
+    .titulo{
+        color: $color-fuente;
+    }
+
+    .subtitulo{
+        color: $color-fuente;
+    }
+    
+    #musica-md{
+        display: none;
+        height: 0%;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .titulo{
+        font-style: italic;
+        font-weight: bolder;
+        opacity: 1;
+        font-size: 35px;
+        background-color: transparent;
+        color: $color-fuente2;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    #musica-lg{
+        display: none;
+        height: 0%;
+    }
+
+    .subtitulo{
+        color: $color-fuente2;
+        font-size: 22px;
+        background-color: transparent;
+        opacity: 1;
+        border: none;
+    }
+
+    .texto-musica{
+        font-size: 17px;
+    }
+}
+
+    /*MEDIA QUERY PARA VIDEOS*/
+
+@media (max-width: 576px){
+    
+    #fondo-videos{
+        background-color: rgb(235, 232, 216);
+    }
+    
+    
+    #video-lg{
+        display: none;
+        height: 0%;
+    }
+    }
+
+@media (min-width: 577px){
+
+    #fondo-videos{
+        background-color: rgb(235, 232, 216);
+    } 
+
+    #videos-xs{
+        display: none;
+        height: 0%;
+    }
+
+}
+
+    /*MEDIA QUERY PARA TIENDA*/
+
+     
+    @media (max-width: 600px){
+    #gridTienda{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        background-color: black;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:"subtitulo-tienda"
+                             "producto1"
+                             "producto-txt1"
+                             "comprar1"
+                             "producto2"
+                             "producto-txt2"
+                             "comprar2"
+                             "producto3"
+                             "producto-txt3"
+                             "comprar3"
+                             "producto4"
+                             "producto-txt4"
+                             "comprar4"
+                             "producto5"
+                             "producto-txt5"
+                             "comprar5"
+                             "producto6"
+                             "producto-txt6"
+                             "comprar6";
+    }
+    
+    .producto-txt{
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        font-family: 'Kaisei Decol', serif;
+        color: white;
+        font-size: 1.5vh;
+    }
+    
+    }
+    
+/*MEDIA QUERY PARA NOTICIAS*/
+@media (max-width: 999px){
+
+
+    main{
+        background-color: rgb(235, 232, 216);
+    }
+    
+    #noticias-md-lg{
+        display: none;
+        height: 0%;
+    }
+
+    #noticia-div1{
+        height: 8vh;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        background-color: transparent;
+    }
+    
+    
+    .titulo{
+        font-size: 2rem;
+        background-color: transparent;
+        color: $color-fuente2;
+        border: none;
+        margin-top: 1.5vh;
+    }
+    
+    .noticias-img-sm{
+        height: auto;
+        width: 100%;
+        margin-top: 1vh;
+    }
+    
+    .noticias-sm{
+        border: solid black;
+        background-color: transparent;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    
+    .noticias-txt-sm{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: auto;
+        color: $color-fuente2;
+    }
+}
+
+@media (min-width: 1000px){
+
+    #fondo-noticias{
+        background-color: rgb(235, 232, 216);
+     }
+
+    #noticias-sm{
+        display:none;
+        height: 0%;
+    }
+}

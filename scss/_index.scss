@@ -1,0 +1,33 @@
+.home-div1{
+    @extend .home-div3;
+    height: 100vh;
+    margin-top: 150px;
+
+}
+
+#home-div2{
+    @extend .home-div3;
+    height: 37.5vh;
+}
+
+.home-div3{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.single{
+    justify-self: center;
+    align-self: center;
+    transition: all 0.5s;
+    }
+
+.single:hover{
+    transform: scale(1.25,1.25)
+    }
+
+

@@ -1,0 +1,501 @@
+@charset "UTF-8";
+.home-div1 {
+  height: 100vh;
+  margin-top: 150px; }
+
+#home-div2 {
+  height: 37.5vh; }
+
+.home-div3, .home-div1, #home-div2 {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  justify-self: center;
+  text-align: center; }
+
+.single {
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s; }
+
+.single:hover {
+  transform: scale(1.25, 1.25); }
+
+.texto-musica {
+  color: black;
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.2vw;
+  background-color: transparent;
+  opacity: 1;
+  border: none; }
+
+.musica-div1 {
+  height: 10vh; }
+
+.musica-div2 {
+  align-self: center;
+  text-align: center; }
+
+#container-inner {
+  margin-top: 147px; }
+
+#noticia-div1 {
+  height: 8vh;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  opacity: 0.8; }
+
+#noticia-div2 {
+  height: 92vh;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  margin-top: 10vh; }
+
+.carousel, .carousel-inner > .item > img {
+  height: 600px;
+  width: 966px;
+  margin: auto; }
+
+.videos {
+  text-align: center; }
+
+#tienda {
+  background-color: black;
+  opacity: 1;
+  height: 100px;
+  width: auto; }
+
+#gridTienda {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100px 250px 100px 100px  250px 100px 100px;
+  grid-template-areas: "subtitulo-tienda     subtitulo-tienda     subtitulo-tienda " "producto1                producto2            producto3" "producto-txt1           producto-txt2        producto-txt3" "comprar1                 comprar2              comprar3" "producto4                producto5            producto6" "producto-txt4            producto-txt5       producto-txt6" "comprar4                 comprar5              comprar6"; }
+
+.producto {
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s; }
+
+.producto:hover {
+  transform: scale(1.1, 1.1); }
+
+/*Fotos de productos - AREAS DE GRID*/
+.producto1 {
+  grid-area: producto1; }
+
+.producto2 {
+  grid-area: producto2; }
+
+.producto3 {
+  grid-area: producto3; }
+
+.producto4 {
+  grid-area: producto4; }
+
+.producto5 {
+  grid-area: producto5; }
+
+.producto6 {
+  grid-area: producto6; }
+
+.producto-txt {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-family: 'Kaisei Decol', serif;
+  color: white;
+  font-size: 1vw; }
+
+/*Textos de productos - AREAS DE GRID*/
+.producto-txt1 {
+  grid-area: producto-txt1; }
+
+.producto-txt2 {
+  grid-area: producto-txt2; }
+
+.producto-txt3 {
+  grid-area: producto-txt3; }
+
+.producto-txt4 {
+  grid-area: producto-txt4; }
+
+.producto-txt5 {
+  grid-area: producto-txt5; }
+
+.producto-txt6 {
+  grid-area: producto-txt6; }
+
+.comprar {
+  justify-self: center;
+  align-self: center; }
+
+/*Botón de Comprar - AREAS DE GRID*/
+.comprar1 {
+  grid-area: comprar1; }
+
+.comprar2 {
+  grid-area: comprar2; }
+
+.comprar3 {
+  grid-area: comprar3; }
+
+.comprar4 {
+  grid-area: comprar4; }
+
+.comprar5 {
+  grid-area: comprar5; }
+
+.comprar6 {
+  grid-area: comprar6; }
+
+/*Subtítulo de página - AREAS DE GRID*/
+.subtitulo-tienda {
+  grid-area: subtitulo-tienda;
+  justify-self: center;
+  align-self: center; }
+
+/*ESTRUCTURA*/
+* {
+  margin: 0%;
+  padding: 0%; }
+
+header {
+  background-color: black;
+  height: 30%;
+  text-align: center; }
+
+footer {
+  height: auto; }
+
+.texto-footer {
+  font-size: 20px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.texto-footer-btn {
+  color: black;
+  font-size: 15px;
+  font-weight: bold; }
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: black; }
+
+/*TÍTULOS, SUBTÍTULOS Y TEXTO*/
+h1 {
+  font-family: "MonteCarlo", cursive;
+  font-size: auto;
+  color: white;
+  font-weight: bold; }
+
+h2, h3, h4, .titulo, .subtitulo, .texto-musica {
+  font-family: "Abril Fatface", cursive;
+  font-size: 20rem;
+  color: white;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center; }
+
+h3 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 5rem;
+  color: white; }
+
+h4 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  color: white; }
+
+.titulo {
+  font-family: "Abril Fatface", cursive;
+  font-size: 45px;
+  color: white;
+  opacity: 1;
+  background-color: black;
+  opacity: 0.8;
+  border: none; }
+
+.subtitulo {
+  font-family: "Abril Fatface", cursive;
+  font-size: 25px;
+  color: black;
+  opacity: 1;
+  border: none; }
+
+.texto-musica {
+  font-family: "Abril Fatface", cursive;
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+  background-color: transparent;
+  border: none; }
+
+.titulo-tienda1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 45px;
+  color: white;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  opacity: 1;
+  background-color: black;
+  opacity: 0.8;
+  border: none; }
+
+/*Navegador*/
+/*Modificación para Bootstrap*/
+.nav-bts {
+  font-family: "Abril Fatface", cursive;
+  font-size: 18px;
+  color: white;
+  background-color: black; }
+
+/*Backgrounds - Main*/
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+  object-fit: cover; }
+
+#fondo-home {
+  background-image: url(img/fondos/LDRfondohome.jpg);
+  background-size: cover; }
+
+#fondo-noticias {
+  background-image: url(img/fondos/LDRfondonoticias.jpg);
+  background-size: cover; }
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0; }
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px; }
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998; }
+
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff; }
+
+.social-network a.icoApple:hover {
+  background-color: #474747; }
+
+.social-network a.icoSpotify:hover {
+  background-color: #1f9900; }
+
+.social-network a.icoYoutube:hover {
+  background-color: #b90000; }
+
+.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoApple:hover i, .social-network a.icoSpotify:hover i, .social-network a.icoYoutube:hover i {
+  color: white; }
+
+a.socialIcon:hover, .socialHoverClass {
+  color: #44BCDD; }
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #D3D3D3; }
+
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center; }
+
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.social-circle i {
+  color: black;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s; }
+
+/*MEDIA QUERY PARA HOME*/
+@media only screen and (max-width: 992px) {
+  main {
+    background-color: #ebe8d8; }
+  h1 {
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 80rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  h2, h3, h4, .titulo, .subtitulo, .texto-musica {
+    color: black; }
+  h3 {
+    color: black; }
+  h4 {
+    color: black; }
+  #home-div1 {
+    justify-content: center;
+    align-content: center; }
+  #home-div2 {
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    justify-self: center; } }
+
+/*MEDIA QUERY PARA MUSICA*/
+@media (min-width: 992px) {
+  .titulo {
+    color: white; }
+  .subtitulo {
+    color: white; }
+  #musica-md {
+    display: none;
+    height: 0%; } }
+
+@media (max-width: 991px) {
+  .titulo {
+    font-style: italic;
+    font-weight: bolder;
+    opacity: 1;
+    font-size: 35px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    margin-bottom: 10px; }
+  #musica-lg {
+    display: none;
+    height: 0%; }
+  .subtitulo {
+    color: black;
+    font-size: 22px;
+    background-color: transparent;
+    opacity: 1;
+    border: none; }
+  .texto-musica {
+    font-size: 17px; } }
+
+/*MEDIA QUERY PARA VIDEOS*/
+@media (max-width: 576px) {
+  #fondo-videos {
+    background-color: #ebe8d8; }
+  #video-lg {
+    display: none;
+    height: 0%; } }
+
+@media (min-width: 577px) {
+  #fondo-videos {
+    background-color: #ebe8d8; }
+  #videos-xs {
+    display: none;
+    height: 0%; } }
+
+/*MEDIA QUERY PARA TIENDA*/
+@media (max-width: 600px) {
+  #gridTienda {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "subtitulo-tienda" "producto1" "producto-txt1" "comprar1" "producto2" "producto-txt2" "comprar2" "producto3" "producto-txt3" "comprar3" "producto4" "producto-txt4" "comprar4" "producto5" "producto-txt5" "comprar5" "producto6" "producto-txt6" "comprar6"; }
+  .producto-txt {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-family: 'Kaisei Decol', serif;
+    color: white;
+    font-size: 1.5vh; } }
+
+/*MEDIA QUERY PARA NOTICIAS*/
+@media (max-width: 999px) {
+  main {
+    background-color: #ebe8d8; }
+  #noticias-md-lg {
+    display: none;
+    height: 0%; }
+  #noticia-div1 {
+    height: 8vh;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: transparent; }
+  .titulo {
+    font-size: 2rem;
+    background-color: transparent;
+    color: black;
+    border: none;
+    margin-top: 1.5vh; }
+  .noticias-img-sm {
+    height: auto;
+    width: 100%;
+    margin-top: 1vh; }
+  .noticias-sm {
+    border: solid black;
+    background-color: transparent;
+    margin-top: 2vh;
+    margin-bottom: 2vh; }
+  .noticias-txt-sm {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: auto;
+    color: black; } }
+
+@media (min-width: 1000px) {
+  #fondo-noticias {
+    background-color: #ebe8d8; }
+  #noticias-sm {
+    display: none;
+    height: 0%; } }

@@ -1,0 +1,30 @@
+#noticia-div1{
+    height: 8vh;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+#noticia-div2{
+    height: 92vh;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.carousel, .carousel-inner > .item > img {
+    height: 600px;
+    width: 966px;
+    margin: auto;    
+  }
+
