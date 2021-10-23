@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!--Animate CSS-->   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--AOS-->
@@ -33,14 +34,15 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark nav-bts">
             <div class="container-fluid">
+              <img src="img/logos/logorosa.jpg" alt="Logo Lana del Rey" width="40px" height="40px >
               <a class="navbar-brand" href="index.html"><h1>Lana del Rey</h1></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav animate__animated animate__slideInDown">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">INICIO<span class="sr-only">(current)</span></a>
+                  <li class="nav-item animate__animated animate__slideInDown">
+                    <a class="nav-link disabled">INICIO</a>
                   </li>
                   <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="musica.html">MÚSICA</a></li>
                   <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="videos.html">VIDEOS</a></li>
@@ -55,49 +57,141 @@
     <main>
         <!--Bootstrap Grid-->
         <div class="container"> 
-            <section class="row align-items-center justify-content-center"> 
-                <video autoplay muted loop class="d-none d-md-flex">
+              <section class="row align-items-center justify-content-center"> 
+                <video autoplay muted loop class="d-none d-md-flex" id="video-index">
                 <source src="videos/video-home.mp4" type="video/mp4">               
                     Tu navegador no soporta el video
                 </video>          
-            </section>
-            <div class="row home-div1">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                <a href="https://shoplanadelrey.com/products/blue-banisters-cd"><img src="img/covers/bb.png" alt="Blue Banister"></a>
-                <h2>"BLUE BANISTERS"</h2>
-                <h3>NUEVO ÁLBUM - 22 DE OCTUBRE</h3>
+              </section>
+              <section>
+                <div class="row home-div1">
+                    <div class="col-6">
+                      <a href="https://shoplanadelrey.com/products/blue-banisters-cd"><img src="img/covers/bb.png" alt="Blue Banisters"></a>
+                    </div>      
+                    <div class="col-6">
+                      <h2>"BLUE BANISTERS"</h2>
+                      <h3>NUEVO ÁLBUM - YA DISPONIBLE</h3>
+                      <a href="https://lana.lnk.to/BlueBanistersAlbumWE">
+                        <button type="button" class="btn btn-outline-light">ADQUIRIR</button>
+                      </a>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up">
-                <h4>♫   ÚLTIMAS PUBLICACIONES   ♫</h4>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up">
+                    <h4>♫   ÚLTIMOS SENCILLOS   ♫</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="row" id="home-div2">
-                <div class="col-lg-3 col-md-6 col-sm-6 home-div3" data-aos="fade-up">
-                    <a href="https://www.youtube.com/watch?v=4mECX60FVJQ">
-                    <img class="single" src="img/singles/arcadia.jpg" alt="Arcadia" width="80%" height="80%">
-                    </a>
+                <div class="row" id="home-div2">
+                    <div class="col-lg-3 col-md-6 col-sm-6 home-div3" data-aos="fade-up">
+                        <a href="https://www.youtube.com/watch?v=4mECX60FVJQ">
+                        <img class="single" src="img/singles/arcadia.jpg" alt="Arcadia" width="80%" height="80%">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 home-div3" data-aos="fade-up">
+                        <a href="https://www.youtube.com/watch?v=HhmpAHccwp0&list=OLAK5uy_limyccsrbMSRdjhKHmpdqXAiKdx6bYLz8">
+                        <img class="single" src="img/singles/bluebanisters.jpg" alt="Blue Banisters" width="80%" height="80%">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 home-div3" data-aos="fade-up">
+                        <a href="https://www.youtube.com/watch?v=HhmpAHccwp0&list=OLAK5uy_limyccsrbMSRdjhKHmpdqXAiKdx6bYLz8">
+                        <img class="single" src="img/singles/textbook.jpg" alt="Text Book" width="80%" height="80%">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 home-div3" data-aos="fade-up">
+                        <a href="https://www.youtube.com/watch?v=HhmpAHccwp0&list=OLAK5uy_limyccsrbMSRdjhKHmpdqXAiKdx6bYLz8">
+                        <img class="single" src="img/singles/wildflowerwildfire.jpg" alt="wildflower Wildfire" width="80%" height="80%">
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 home-div3" data-aos="fade-up">
-                    <a href="https://www.youtube.com/watch?v=HhmpAHccwp0&list=OLAK5uy_limyccsrbMSRdjhKHmpdqXAiKdx6bYLz8">
-                    <img class="single" src="img/singles/bluebanisters.jpg" alt="Blue Banisters" width="80%" height="80%">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 home-div3" data-aos="fade-up">
-                    <a href="https://www.youtube.com/watch?v=HhmpAHccwp0&list=OLAK5uy_limyccsrbMSRdjhKHmpdqXAiKdx6bYLz8">
-                    <img class="single" src="img/singles/textbook.jpg" alt="Text Book" width="80%" height="80%">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 home-div3" data-aos="fade-up">
-                    <a href="https://www.youtube.com/watch?v=HhmpAHccwp0&list=OLAK5uy_limyccsrbMSRdjhKHmpdqXAiKdx6bYLz8">
-                    <img class="single" src="img/singles/wildflowerwildfire.jpg" alt="wildflower Wildfire" width="80%" height="80%">
-                    </a>
-                </div>
-            </div>
+              </section>
         </div>
+        <!--NOVEDADES-->
+        <section id="home-div5">
+        <div class="container">
+                    <div class="row">
+                      <p class="titulo-index">NOVEDADES</p>
+                    </div>
+                    <!--Novedad 1-->
+                    <div class="row novedades" data-aos="fade-left">
+                      <div class="col-4 home-div3">
+                        <img src="img/noticias/noticia1.JPG" alt="Lanzamiento de Blue Banisters" width="400px" height="215px">
+                      </div>
+                      <div class="col-8">
+                        <p class="subtitulo-index">LANZAMIENTO DE <i>BLUE BANISTERS</i></p>
+                        <p class="texto-index">El 22 de octubre fue lanzado el octavo álbum de estudio de Lana del Rey. 
+                          El mismo consta de 15 pistas sin contar con la producción de Jack Antonoff y con
+                          varios temas que había compuesto y producido hace mucho tiempo como por ejemplo:
+                          <i>Living Legend, Nectar of the Gods, Thunder y Cherry Blossom</i>. Si querés escucharlo
+                          hacé clic en el botón:                          
+                        </p>
+                        <div class="row">
+                          <div class="col-12">
+                            <a href="https://lana.lnk.to/BlueBanistersAlbumWE">
+                              <button type="button" class="btn btn-outline-light">REPRODUCIR ÁLBUM</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!--Novedad 2-->
+                  <div class="row novedades" data-aos="fade-right">
+                    <div class="col-4 home-div3">
+                      <img src="img/noticias/noticia2.jpg" alt="Plagio de Lorde a Lana del Rey" width="400px" height="215px">
+                    </div>
+                    <div class="col-8">
+                      <p class="subtitulo-index">LANA DEL REY PUBLICA EL VIDEO OFICIAL DE <i>BLUE BANISTERS</i></p>
+                      <p class="texto-index">Lana del Rey publicó en su cuenta de Youtube, el videoclip oficial de <i>Blue Banisters</i>.
+                        En el video vemos a Lana con su hermana y su mejor amiga representando todo lo descrito en la letra de dicha canción:
+                        Cocinando, pintando barandillas, montando un tractor Deere, el embarazo de su hermana Chuck, etc. En su cuenta personal
+                        declaró que "disfruta de hacer videos haciendo tonterías". El video viene a reemplazar uno antiguo grabado junto a su ex-novio
+                        y a quien menciona en la canción, pero finalmente fue descartado. Si quieres ver el video, presioná en el botón:                         
+                      </p>
+                      <div class="row">
+                        <a href="https://www.youtube.com/watch?v=fN0OmdJUl0I">
+                          <button type="button" class="btn btn-outline-light">REPRODUCIR VIDEO</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Novedad 3-->
+                    <div class="row novedades" data-aos="fade-left">
+                      <div class="col-4 home-div3">
+                        <img src="img/noticias/noticia3.JPG" alt="Plagio de Lorde a Lana del Rey" width="400px" height="225px">
+                      </div>
+                      <div class="col-8">
+                        <p class="subtitulo-index">LORDE ACUSADA DE PLAGIAR DOS CANCIONES DE LANA DEL REY</p>
+                        <p class="texto-index">Todo se originó a raíz de que los fanáticos de Lana del Rey asegura que 'Stoned at the Nail Salon' es muy similar a 'Wild at Heat'
+                          y 'hope is a dangerous thing for a woman like to have - but I have it' y al parecer esto había llegados a oídos de la cantante. Sin embargo, ambos equipos
+                          estuvieron de acuerdo en no escalarlo a nivel judicial. El equipo de Lana del Rey declaró que solo quiere que se reconozca que se 
+                          inspiró en las canciones antes mencionadas para el nuevo sencillo de Lorde y de hecho parece haber funcionado, ya que si buscamos dicho tema en
+                          Spotify, vemos que aparecen debajo las canciones de Lana del Rey a manera de reconocimiento"                         
+                        </p>
+                      </div>
+                  </div>
+                  <!--Novedad 4-->
+                  <div class="row novedades" data-aos="fade-right">
+                    <div class="col-4 home-div3">
+                      <img src="img/noticias/noticia4.jpg" alt="Plagio de Lorde a Lana del Rey" width="400px" height="225px">
+                    </div>
+                    <div class="col-8">
+                      <p class="subtitulo-index">LANA DEL REY DESACTIVA TODAS SUS REDES SOCIALES</p>
+                      <p class="texto-index">La artista se marcha de las redes para centrarse en todos sus proyectos y evitar la constante invación
+                        en su privacidad que suponen las plataformas para una persona tan conocida como ella. Así lo ha anunciado en un breve video
+                        subido precisamente a sus redes antes de desaperecer por completo de ellas. Eso sí, ha dejado claro desde el principio que esto no supone el final
+                        de su carrera ni mucho menos, sino todo lo contrario. Lana del Rey busca la manera de no distraerse a la hora de continuar trabajando en toda 
+                        su nueva música, incluyendo el esperadísimo álbum que tiene entre manos y que se llamará <i>"Blue Banisters"</i>, así como otros trabajos
+                        en los que se verá involucrada.                         
+                      </p>
+                    </div>
+                </div>
+                <!--Volver a inicio-->
+                <a href="index.html">
+                  <button type="button" class="btn btn-outline-light">VOLVER A INICIO</button>
+                </a>
+      </section>     
     </main>
 
+    
 <!-- Footer -->
 <footer class="bg-dark text-center text-white">
 

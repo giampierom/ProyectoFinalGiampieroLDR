@@ -8,6 +8,8 @@
 #home-div2{
     @extend .home-div3;
     height: 37.5vh;
+    margin-top:40px;
+    margin-bottom: 50px;
 }
 
 .home-div3{
@@ -20,6 +22,21 @@
     text-align: center;
 }
 
+.home-div4{
+    background-color:$color-fondo;
+    width: auto;
+    opacity: 0.7;
+}
+
+#home-div5{
+    background-color: black;
+    width: 100vw;
+    text-align: center;
+    justify-items: center;
+    opacity: 0.8;
+    margin-bottom: 0px;
+}
+
 .single{
     justify-self: center;
     align-self: center;
@@ -29,5 +46,16 @@
 .single:hover{
     transform: scale(1.25,1.25)
     }
+
+.novedades{
+    @extend .home-div3;
+    margin: 2vh 1vw 2vh 1vw;
+    padding: 2vh 1vw 2vh 1vw;
+    border: 2px solid white;
+}
+
+#boton{
+    @include propiedades-texto ($fuente3,15px,$color-fuente);
+}
 
 

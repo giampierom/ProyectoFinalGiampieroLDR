@@ -38,6 +38,7 @@ a:link, a:visited, a:active {
 h1{
     @include propiedades-texto ($fuente1,auto,$color-fuente);
     font-weight: bold;
+    margin-right: 5px;
 }
 
 h2{
@@ -102,6 +103,24 @@ h4{
     border: none;
 }
 
+.titulo-index{
+    @include propiedades-texto ($fuente2,40px,$color-fuente);
+    @extend h2;
+    border: none;
+}
+
+.subtitulo-index{
+    @include propiedades-texto ($fuente2,20px,$color-fuente);
+    @extend h2;
+    border: none;
+}
+
+.texto-index{
+    @include propiedades-texto ($fuente3,15px,$color-fuente);
+    text-align: left;
+    margin-right: 2vh;
+}
+
 /*Navegador*/
 
 /*Modificación para Bootstrap*/
@@ -114,6 +133,14 @@ h4{
 
 /*Backgrounds - Main*/
 
+#video-index{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+#video-musica{
+    @extend #video-index;
+}
 
 video{ 
     position: fixed;
@@ -125,6 +152,7 @@ video{
     height: 100vh;
     z-index: -100;
     object-fit: cover;
+
 }
 
 #fondo-home{

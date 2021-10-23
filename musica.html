@@ -31,28 +31,31 @@
 
 <!--Navbar con Bootstrap y Estilo Propio-->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark nav-bts">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><h1>Lana del Rey</h1></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav animate__animated animate__slideInDown">
-              <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="videos.html">VIDEOS</a></li>
-              <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="noticias.html">NOTICIAS</a></li>
-              <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="tienda.html">TIENDA</a></li>
-            </ul>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-dark nav-bts">
+      <div class="container-fluid">
+        <img src="img/logos/logorosa.jpg" alt="Logo Lana del Rey" width="40px" height="40px >
+        <a class="navbar-brand" href="index.html"><h1>Lana del Rey</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav animate__animated animate__slideInDown">
+            <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="index.html">INICIO</a></li>
+            <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link disabled">MÚSICA</a></li>
+            <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="videos.html">VIDEOS</a></li>
+            <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="noticias.html">NOTICIAS</a></li>
+            <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="tienda.html">TIENDA</a></li>
+          </ul>
         </div>
-      </nav> 
+      </div>
+    </nav> 
 </header>
 
   <main>
     <!--Bootstrap Grid-->
     <div class="container-fluid"> 
       <section class="row align-items-center justify-content-center"> 
-        <video autoplay muted loop class="d-none d-md-flex">
+        <video autoplay muted loop class="d-none d-md-flex"  id="video-musica">
           <source src="videos/video-musica.mp4" type="video/mp4">               
               Tu navegador no soporta el video
         </video>          
@@ -67,21 +70,56 @@
                 <p class="subtitulo">ÚLTIMOS LANZAMIENTOS</p>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 musica-div2">
-                <iframe class="animate__animated animate__fadeIn" src="https://open.spotify.com/embed/album/1C5RVpJJ2IAn92JeZwFF8j" width="300" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 musica-div2">
-                <iframe class="animate__animated animate__fadeIn" src="https://open.spotify.com/embed/album/66crHVaecDZMH5QHd5r2xy" width="300" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 musica-div2">
-                <iframe class="animate__animated animate__fadeIn" src="https://open.spotify.com/embed/album/761oXL0XFzpRE36GF1wn89" width="300" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>    
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 musica-div2">
-                <iframe class="animate__animated animate__fadeIn" src="https://open.spotify.com/embed/track/5mqVdt50q0fYvyz3gd6eKe" width="300" height="100" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
+        <section>
+<!--      <div class="row home-div3">
+          <div class="col-6">
+            <img src="img/ldrbb.png" alt="Blue Banisters Alternate Cover">
+          </div>
+          <div class="col-6">
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Text Book</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Blue Banisters</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Arcadia</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Interlude - The Trio</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Black Bathing Suit</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">If You Lie Down With Me</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Beautiful</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Violet for Roses</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Dealer</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Thunder</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Wildflower Wildfire</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Nectar of the Gods</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Living Legend</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Cherry Blossom</button></a>
+            <br>
+            <a href="https://lana.lnk.to/BlueBanistersAlbumWE"><button type="button" class="btn btn-outline-light btn-musica">Sweet Carolina</button></a>
+          </div>
         </div>
+        </section> -->
+
+        <section>
+          <div class="row">
+            <div class="col-6">
+              <img src="img/ldrbb.png" alt="Blue Banisters Alternate Cover">
+            </div>
+            <div class="col-6">
+            <iframe src="https://open.spotify.com/embed/album/2wwCc6fcyhp1tfY3J6Javr" width="80%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+          </div>
+
+        </section>
 
         <div class="container-fluid" id="musica-lg">
           <div class="col-12">                      

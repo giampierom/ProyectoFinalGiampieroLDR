@@ -4,9 +4,11 @@
   margin-top: 150px; }
 
 #home-div2 {
-  height: 37.5vh; }
+  height: 37.5vh;
+  margin-top: 40px;
+  margin-bottom: 50px; }
 
-.home-div3, .home-div1, #home-div2 {
+.home-div3, .home-div1, #home-div2, .novedades {
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -15,6 +17,19 @@
   justify-self: center;
   text-align: center; }
 
+.home-div4 {
+  background-color: #ebe8d8;
+  width: auto;
+  opacity: 0.7; }
+
+#home-div5 {
+  background-color: black;
+  width: 100vw;
+  text-align: center;
+  justify-items: center;
+  opacity: 0.8;
+  margin-bottom: 0px; }
+
 .single {
   justify-self: center;
   align-self: center;
@@ -22,6 +37,16 @@
 
 .single:hover {
   transform: scale(1.25, 1.25); }
+
+.novedades {
+  margin: 2vh 1vw 2vh 1vw;
+  padding: 2vh 1vw 2vh 1vw;
+  border: 2px solid white; }
+
+#boton {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: white; }
 
 .texto-musica {
   color: black;
@@ -43,6 +68,9 @@
 
 #container-inner {
   margin-top: 147px; }
+
+.btn-musica {
+  width: 250px; }
 
 #noticia-div1 {
   height: 8vh;
@@ -204,9 +232,10 @@ h1 {
   font-family: "MonteCarlo", cursive;
   font-size: auto;
   color: white;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-right: 5px; }
 
-h2, h3, h4, .titulo, .subtitulo, .texto-musica {
+h2, h3, h4, .titulo, .subtitulo, .texto-musica, .titulo-index, .subtitulo-index {
   font-family: "Abril Fatface", cursive;
   font-size: 20rem;
   color: white;
@@ -268,6 +297,25 @@ h4 {
   opacity: 0.8;
   border: none; }
 
+.titulo-index {
+  font-family: "Abril Fatface", cursive;
+  font-size: 40px;
+  color: white;
+  border: none; }
+
+.subtitulo-index {
+  font-family: "Abril Fatface", cursive;
+  font-size: 20px;
+  color: white;
+  border: none; }
+
+.texto-index {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  margin-right: 2vh; }
+
 /*Navegador*/
 /*Modificación para Bootstrap*/
 .nav-bts {
@@ -277,6 +325,10 @@ h4 {
   background-color: black; }
 
 /*Backgrounds - Main*/
+#video-index, #video-musica {
+  padding-left: 0%;
+  padding-right: 0%; }
+
 video {
   position: fixed;
   right: 0;
@@ -375,7 +427,7 @@ a.socialIcon:hover, .socialHoverClass {
     font-size: 80rem;
     font-weight: bold;
     text-transform: uppercase; }
-  h2, h3, h4, .titulo, .subtitulo, .texto-musica {
+  h2, h3, h4, .titulo, .subtitulo, .texto-musica, .titulo-index, .subtitulo-index {
     color: black; }
   h3 {
     color: black; }
