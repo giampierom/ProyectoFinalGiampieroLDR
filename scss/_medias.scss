@@ -32,14 +32,10 @@
     
     
     #home-div2{
-        height: auto;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        justify-items: center;
-        align-self: center;
-        justify-self: center;
+        display: none;
+        
     }
+
     
     #boton1{
         color: black;
@@ -54,16 +50,37 @@
         color: $color-fuente;
     }
 
-    .homediv3{
-        img{
-            width: 300px;
-            height: 168px;
-        }
+    .carousel-caption{
+        transform: translateY(-50%);
+        bottom: initial;
+        top: 55%;
+    }
+
+    .fa-play-circle{
+        color: black;
+    }
+
+    .carousel-inner{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .fa-arrow-alt-circle-left{
+        color: black;
+    }
+
+    .fa-arrow-alt-circle-right{
+        color: black;
     }
 
     }
+    
 
-
+@media (min-width: 993px){
+    #home-div6{
+        display: none;
+    }
+}
 
     /*MEDIA QUERY PARA MUSICA*/
 
