@@ -1,3 +1,8 @@
+#main-musica{
+    height: auto;
+}
+
+
 .texto-musica{
     color: black;
     font-family: 'Abril Fatface', cursive;
@@ -11,12 +16,15 @@
 }
 
 .musica-div1{
-    height: 10vh;
+    height: 15vh;
+    align-content: center;
+    justify-content: center;
+
 }
 
-.musica-div2{
-    align-self: center;
-    text-align: center;
+#banner-musica{
+    margin: 0%;
+    padding: 0%;
 }
 
 #container-inner{
@@ -26,3 +34,4 @@
 .btn-musica{
     width: 250px;
 }
+

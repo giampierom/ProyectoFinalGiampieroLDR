@@ -41,12 +41,10 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav animate__animated animate__slideInDown">
-                  <li class="nav-item animate__animated animate__slideInDown">
-                    <a class="nav-link disabled">INICIO</a>
-                  </li>
+                  <li class="nav-item animate__animated animate__slideInDown"><a class="nav-link disabled">INICIO</a></li>
                   <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="musica.html">MÚSICA</a></li>
                   <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="videos.html">VIDEOS</a></li>
-                  <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="noticias.html">NOTICIAS</a></li>
+                  <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="galeria.html">GALERÍA</a></li>
                   <li class="nav-item animate__animated animate__slideInDown"> <a class="nav-link" href="tienda.html">TIENDA</a></li>
                 </ul>
               </div>
@@ -65,14 +63,14 @@
               </section>
               <section>
                 <div class="row home-div1">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                       <a href="https://shoplanadelrey.com/products/blue-banisters-cd"><img src="img/covers/bb.png" alt="Blue Banisters"></a>
                     </div>      
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                       <h2>"BLUE BANISTERS"</h2>
                       <h3>NUEVO ÁLBUM - YA DISPONIBLE</h3>
                       <a href="https://lana.lnk.to/BlueBanistersAlbumWE">
-                        <button type="button" class="btn btn-outline-light">ADQUIRIR</button>
+                        <button type="button" class="btn btn-outline-light" id="boton1">ADQUIRIR</button>
                       </a>
                     </div>
                 </div>
@@ -105,6 +103,35 @@
                 </div>
               </section>
         </div>
+        
+        <!--CARRUSEL PARA CELULARES
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>-->
+
         <!--NOVEDADES-->
         <section id="home-div5">
         <div class="container">
@@ -113,10 +140,10 @@
                     </div>
                     <!--Novedad 1-->
                     <div class="row novedades" data-aos="fade-left">
-                      <div class="col-4 home-div3">
+                      <div class="col-lg-4 col-sm-12 home-div3"> <!--Apliqué col-sm-12 para que se vea en otra fila el texto-->
                         <img src="img/noticias/noticia1.JPG" alt="Lanzamiento de Blue Banisters" width="400px" height="215px">
                       </div>
-                      <div class="col-8">
+                      <div class="col-lg-8 col-sm-12">
                         <p class="subtitulo-index">LANZAMIENTO DE <i>BLUE BANISTERS</i></p>
                         <p class="texto-index">El 22 de octubre fue lanzado el octavo álbum de estudio de Lana del Rey. 
                           El mismo consta de 15 pistas sin contar con la producción de Jack Antonoff y con
@@ -135,10 +162,10 @@
                     </div>
                   <!--Novedad 2-->
                   <div class="row novedades" data-aos="fade-right">
-                    <div class="col-4 home-div3">
+                    <div class="col-lg-4 col-sm-12 home-div3">
                       <img src="img/noticias/noticia2.jpg" alt="Plagio de Lorde a Lana del Rey" width="400px" height="215px">
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8 col-sm-12">
                       <p class="subtitulo-index">LANA DEL REY PUBLICA EL VIDEO OFICIAL DE <i>BLUE BANISTERS</i></p>
                       <p class="texto-index">Lana del Rey publicó en su cuenta de Youtube, el videoclip oficial de <i>Blue Banisters</i>.
                         En el video vemos a Lana con su hermana y su mejor amiga representando todo lo descrito en la letra de dicha canción:
@@ -155,10 +182,10 @@
                   </div>
                   <!--Novedad 3-->
                     <div class="row novedades" data-aos="fade-left">
-                      <div class="col-4 home-div3">
-                        <img src="img/noticias/noticia3.JPG" alt="Plagio de Lorde a Lana del Rey" width="400px" height="225px">
+                      <div class="col-lg-4 col-sm-12 home-div3">
+                        <img src="img/noticias/noticia4.JPG" alt="Plagio de Lorde a Lana del Rey" width="400px" height="225px">
                       </div>
-                      <div class="col-8">
+                      <div class="col-lg-8 col-sm-12">
                         <p class="subtitulo-index">LORDE ACUSADA DE PLAGIAR DOS CANCIONES DE LANA DEL REY</p>
                         <p class="texto-index">Todo se originó a raíz de que los fanáticos de Lana del Rey asegura que 'Stoned at the Nail Salon' es muy similar a 'Wild at Heat'
                           y 'hope is a dangerous thing for a woman like to have - but I have it' y al parecer esto había llegados a oídos de la cantante. Sin embargo, ambos equipos
@@ -170,10 +197,10 @@
                   </div>
                   <!--Novedad 4-->
                   <div class="row novedades" data-aos="fade-right">
-                    <div class="col-4 home-div3">
-                      <img src="img/noticias/noticia4.jpg" alt="Plagio de Lorde a Lana del Rey" width="400px" height="225px">
+                    <div class="col-lg-4 col-sm-12 home-div3">
+                      <img src="img/noticias/noticia3.jpg" alt="Plagio de Lorde a Lana del Rey" width="400px" height="225px">
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8 col-sm-12">
                       <p class="subtitulo-index">LANA DEL REY DESACTIVA TODAS SUS REDES SOCIALES</p>
                       <p class="texto-index">La artista se marcha de las redes para centrarse en todos sus proyectos y evitar la constante invación
                         en su privacidad que suponen las plataformas para una persona tan conocida como ella. Así lo ha anunciado en un breve video

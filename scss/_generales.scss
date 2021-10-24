@@ -11,7 +11,6 @@ header{
     text-align: center;
 }
 
-
 footer{
     height: auto;
 }
@@ -121,6 +120,14 @@ h4{
     margin-right: 2vh;
 }
 
+.titulo-galeria{
+    @include propiedades-texto ($fuente2,50px,$color-fuente2);
+    @extend h2;
+    border: none;
+    background-color: $color-fondo;
+    margin-bottom: 2vh;
+}
+
 /*Navegador*/
 
 /*Modificación para Bootstrap*/
@@ -155,13 +162,3 @@ video{
 
 }
 
-#fondo-home{
-    background-image: url(img/fondos/LDRfondohome.jpg);
-    background-size: cover;
-}
-
-
-#fondo-noticias{
-    background-image: url(img/fondos/LDRfondonoticias.jpg);
-    background-size: cover;
-}
