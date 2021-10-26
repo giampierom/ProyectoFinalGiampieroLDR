@@ -51,9 +51,6 @@
   font-size: 15px;
   color: white; }
 
-#main-musica {
-  height: auto; }
-
 .texto-musica {
   color: black;
   font-family: 'Abril Fatface', cursive;
@@ -67,6 +64,10 @@
 
 .musica-div1 {
   height: 15vh;
+  align-content: center;
+  justify-content: center; }
+
+#musica-div2 {
   align-content: center;
   justify-content: center; }
 

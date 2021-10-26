@@ -51,7 +51,7 @@
     </nav> 
 </header>
 
-  <main style="background-image: url(img/fondos/LDRfondomusica.jpg); background-size: cover;" id="main-musica">
+  <main style="background-image: url(img/fondos/LDRfondomusica.jpg); background-size: cover;">
     <!--Bootstrap Grid-->   
     
       <section id="banner-musica">
@@ -63,44 +63,63 @@
       </section>     
 
         <section class="home-div3">
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-4">
+              <div class="col-lg-1 offset-lg-1 col-md-0 col-0"></div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
                 <p class="subtitulo">¡DISPONIBLE YA!</p>
-                <img src="img/ldrbb.png" alt="Blue Banisters Alternate Cover" width="400px" height="400px">
+                <img src="img/ldrbb.jpg" alt="Blue Banisters Alternate Cover" width="350px" height="350px">
                 <h2>BLUE BANISTERS</h2>
-                <a href="https://open.spotify.com/album/2wwCc6fcyhp1tfY3J6Javr?si=b06e3f030c64497e">
-                  <button type="button" class="btn btn-outline-light">REPRODUCIR EN SPOTIFY</button>
-                </a>
+                <p class="subtitulo"><i>— REPRODUCIR —</i></p>
+              <section class="mb-4">
+                <div>
+                  <ul class="social-network social-circle">
+                    <li><a href="https://music.apple.com/es/album/blue-banisters/1584675130" class="icoApple" title="Apple"><i class="fa fa-apple"></i></a></li>
+                    <li><a href="https://open.spotify.com/album/2wwCc6fcyhp1tfY3J6Javr" class="icoSpotify" title="Spotify"><i class="fa fa-spotify"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=wdi8_Hv3Lso" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+                </div>
+              </section>  
               </div>
             </div>
           </div>
         </section>
 
-        <div class="container-fluid" id="musica-lg">
+        <div class="container" id="musica-lg">
           <div class="col-12">                      
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                <div class="carousel-inner" id="container-inner">
                 <p class="subtitulo">DISCOGRAFÍA</p> 
                 <div class="carousel-item active">
                   <div class="row">
-                    <div class="col-4">
+                    <div class="col-1">
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <i style="font-size: 30px" class="far fa-arrow-alt-circle-left"></i>
+                    </button>
+                    </div>
+                    <div class="col-3">
                       <a href="https://lana.lnk.to/ChemtrailsOverTheCountryClubWE">
                         <img src="img/covers/cooc.jpg" class="animate__animated animate__fadeIn d-block w-100" alt="Chemtrails Over The Country Club">
                         <p class="texto-musica">-REPRODUCIR-</p>
                       </a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                       <a href="https://lana.lnk.to/NFRWE">
                         <img src="img/covers/nfr.jpg" class="animate__animated animate__fadeIn d-block w-100" alt="Norman Fucking Rockwell!">
                         <p class="texto-musica">-REPRODUCIR-</p>
                       </a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                       <a href="https://lana.lnk.to/LFLaWE">
                         <img src="img/covers/lfl.jpg" class="animate__animated animate__fadeIn d-block w-100" alt="Lust for Life">
                         <p class="texto-musica">-REPRODUCIR-</p>
                       </a>
+                    </div>
+                    <div class="col-lg-1 offset-lg-1"></div>
+                    <div class="col-1">
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <i style="font-size: 30px" class="far fa-arrow-alt-circle-right"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -124,16 +143,10 @@
                           <p class="texto-musica">-REPRODUCIR-</p>
                         </a>
                       </div>
-                    </div>
+
                   </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> <!--Boton de previo-->
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Anterior</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">  <!--Boton de sig-->
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Siguiente</span>
-                      </button>
+
+                  </div>
                 </div>
             </div>
           </div>
@@ -237,5 +250,7 @@
     <script>
     AOS.init();
     </script>
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/fb34ccb4cd.js" crossorigin="anonymous"></script>
 </body>
 </html>
