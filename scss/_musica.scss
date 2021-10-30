@@ -1,15 +1,4 @@
 
-.texto-musica{
-    color: black;
-    font-family: 'Abril Fatface', cursive;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    font-size: 1.2vw;
-    background-color: transparent;
-    opacity: 1;
-    border: none
-}
 
 .musica-div1{
     height: 15vh;
@@ -18,9 +7,14 @@
 
 }
 
-#musica-div2{
-    align-content: center;
+.musica-div3{
     justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
 }
 
 #banner-musica{
@@ -35,5 +29,4 @@
 .btn-musica{
     width: 250px;
 }
-
 

@@ -128,6 +128,18 @@ h4{
     margin-bottom: 2vh;
 }
 
+.texto-musica{
+    @extend h2;
+    @include propiedades-texto ($fuente2,20px,$color-fuente);
+
+}
+
+.subtitulo-musica{
+    @extend h2;
+    @include propiedades-texto ($fuente2,30px,$color-fuente);
+    
+}
+
 /*Navegador*/
 
 /*Modificación para Bootstrap*/

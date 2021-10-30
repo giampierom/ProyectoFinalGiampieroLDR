@@ -1,4 +1,24 @@
 .videos{
     text-align: center;
+    margin: 5px 5px 5px 5px;
+
+    .subtitulo{
+        @include propiedades-texto ($fuente2,20px,$color-fuente2);
+    }
+
 }
 
+#banner-videos{
+    margin: 0%;
+    padding: 0%;
+}
+
+#video-youtube-grande{
+    width: 900px;
+    height: 506px;
+}
+
+.video-youtube-chico{
+    width: 500px;
+    height: 281px;
+}

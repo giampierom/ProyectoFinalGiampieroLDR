@@ -51,25 +51,19 @@
   font-size: 15px;
   color: white; }
 
-.texto-musica {
-  color: black;
-  font-family: 'Abril Fatface', cursive;
-  text-align: center;
-  justify-self: center;
-  align-self: center;
-  font-size: 1.2vw;
-  background-color: transparent;
-  opacity: 1;
-  border: none; }
-
 .musica-div1 {
   height: 15vh;
   align-content: center;
   justify-content: center; }
 
-#musica-div2 {
+.musica-div3 {
+  justify-content: center;
   align-content: center;
-  justify-content: center; }
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  justify-self: center;
+  text-align: center; }
 
 #banner-musica {
   margin: 0%;
@@ -82,7 +76,24 @@
   width: 250px; }
 
 .videos {
-  text-align: center; }
+  text-align: center;
+  margin: 5px 5px 5px 5px; }
+  .videos .subtitulo {
+    font-family: "Abril Fatface", cursive;
+    font-size: 20px;
+    color: black; }
+
+#banner-videos {
+  margin: 0%;
+  padding: 0%; }
+
+#video-youtube-grande {
+  width: 900px;
+  height: 506px; }
+
+.video-youtube-chico {
+  width: 500px;
+  height: 281px; }
 
 img {
   max-width: 100%; }
@@ -239,7 +250,7 @@ h1 {
   font-weight: bold;
   margin-right: 5px; }
 
-h2, h3, h4, .titulo, .subtitulo, .texto-musica, .titulo-index, .subtitulo-index, .titulo-galeria {
+h2, h3, h4, .titulo, .subtitulo, .texto-musica, .titulo-index, .subtitulo-index, .titulo-galeria, .subtitulo-musica {
   font-family: "Abril Fatface", cursive;
   font-size: 20rem;
   color: white;
@@ -327,6 +338,16 @@ h4 {
   border: none;
   background-color: #ebe8d8;
   margin-bottom: 2vh; }
+
+.texto-musica {
+  font-family: "Abril Fatface", cursive;
+  font-size: 20px;
+  color: white; }
+
+.subtitulo-musica {
+  font-family: "Abril Fatface", cursive;
+  font-size: 30px;
+  color: white; }
 
 /*Navegador*/
 /*Modificación para Bootstrap*/
@@ -431,15 +452,15 @@ a.socialIcon:hover, .socialHoverClass {
     font-size: 80rem;
     font-weight: bold;
     text-transform: uppercase; }
-  h2, h3, h4, .titulo, .subtitulo, .texto-musica, .titulo-index, .subtitulo-index, .titulo-galeria {
-    color: black; }
-  h3 {
-    color: black; }
-  h4 {
-    color: black; }
-  #home-div1 {
+  .home-div1 {
     justify-content: center;
     align-content: center; }
+    .home-div1 h2, .home-div1 h3, .home-div1 h4, .home-div1 .titulo, .home-div1 .subtitulo, .home-div1 .texto-musica, .home-div1 .titulo-index, .home-div1 .subtitulo-index, .home-div1 .titulo-galeria, .home-div1 .subtitulo-musica {
+      color: black; }
+    .home-div1 h3 {
+      color: black; }
+  h4 {
+    color: black; }
   #home-div2 {
     display: none; }
   #boton1 {
@@ -469,50 +490,95 @@ a.socialIcon:hover, .socialHoverClass {
 
 /*MEDIA QUERY PARA MUSICA*/
 @media (min-width: 992px) {
-  .titulo {
+  #banner-musica .titulo {
     color: white; }
-  .subtitulo {
+  #banner-musica .subtitulo {
     color: white; }
   #musica-md {
     display: none;
     height: 0%; } }
 
 @media (max-width: 991px) {
-  .titulo {
-    font-style: italic;
-    font-weight: bolder;
+  .musica-div1 .titulo {
     opacity: 1;
     font-size: 35px;
     background-color: transparent;
-    color: black;
+    color: white;
     border: none;
     margin-bottom: 10px; }
   #musica-lg {
     display: none;
     height: 0%; }
-  .subtitulo {
-    color: black;
-    font-size: 22px;
-    background-color: transparent;
-    opacity: 1;
-    border: none; }
-  .texto-musica {
-    font-size: 17px; } }
+  .carousel-inner {
+    margin-bottom: 50px; }
+  .carousel-indicators {
+    bottom: -10px; }
+  carousel-indicators > li {
+    border-radius: 50%; }
+  .musica-div3 {
+    height: 100vh; }
+  #banner-musica .titulo {
+    font-family: "Abril Fatface", cursive;
+    font-size: 45px;
+    color: white; } }
 
 /*MEDIA QUERY PARA VIDEOS*/
 @media (max-width: 576px) {
   #fondo-videos {
     background-color: #ebe8d8; }
-  #video-lg {
-    display: none;
-    height: 0%; } }
+  #video-youtube-grande {
+    width: auto;
+    height: auto;
+    padding: 5px 5px 5px 5px; }
+  .video-youtube-chico {
+    width: auto;
+    height: auto;
+    padding: 5px 5px 5px 5px; }
+  .videos {
+    text-align: center;
+    margin: 5px 5px 5px 5px; }
+    .videos .subtitulo {
+      font-family: "Abril Fatface", cursive;
+      font-size: 15px;
+      color: black; }
+  #banner-videos .titulo {
+    color: black;
+    background-color: transparent;
+    opacity: 1; } }
 
 @media (min-width: 577px) {
   #fondo-videos {
+    background-color: #ebe8d8; } }
+
+@media (min-width: 577px) and (max-width: 960px) {
+  #video-youtube-grande {
+    width: 500px;
+    height: 281px;
+    padding: 5px 5px 5px 5px; } }
+
+/*MEDIA QUERY PARA GALERÍAS*/
+@media (max-width: 576px) {
+  #fondo-videos {
     background-color: #ebe8d8; }
-  #videos-xs {
-    display: none;
-    height: 0%; } }
+  .titulo-galeria {
+    font-family: "Abril Fatface", cursive;
+    font-size: 35px;
+    color: black;
+    margin-top: 1vh; }
+  .subtitulo {
+    font-family: "Abril Fatface", cursive;
+    font-size: 15px;
+    color: black; } }
+
+@media (min-width: 577px) {
+  #fondo-videos {
+    background-color: #ebe8d8; } }
+
+@media (min-width: 577px) and (max-width: 960px) {
+  #video-youtube-grande {
+    width: 500px;
+    height: 281px;
+    padding: 5px 5px 5px 5px; } }
 
 /*MEDIA QUERY PARA TIENDA*/
 @media (max-width: 800px) {
@@ -552,45 +618,3 @@ a.socialIcon:hover, .socialHoverClass {
     font-size: 1.5vh; }
   .subtitulo {
     color: white; } }
-
-/*MEDIA QUERY PARA NOTICIAS*/
-@media (max-width: 999px) {
-  main {
-    background-color: #ebe8d8; }
-  #noticias-md-lg {
-    display: none;
-    height: 0%; }
-  #noticia-div1 {
-    height: 8vh;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    background-color: transparent; }
-  .titulo {
-    font-size: 2rem;
-    background-color: transparent;
-    color: black;
-    border: none;
-    margin-top: 1.5vh; }
-  .noticias-img-sm {
-    height: auto;
-    width: 100%;
-    margin-top: 1vh; }
-  .noticias-sm {
-    border: solid black;
-    background-color: transparent;
-    margin-top: 2vh;
-    margin-bottom: 2vh; }
-  .noticias-txt-sm {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: auto;
-    color: black; } }
-
-@media (min-width: 1000px) {
-  #fondo-noticias {
-    background-color: #ebe8d8; }
-  #noticias-sm {
-    display: none;
-    height: 0%; } }
