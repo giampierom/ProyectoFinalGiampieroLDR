@@ -102,6 +102,14 @@ h4{
     border: none;
 }
 
+#subtitulo-tienda2{
+    @include propiedades-texto ($fuente2,20px,white);
+    @extend h2;
+    opacity: 1;
+    border: none;
+}
+
+
 .titulo-index{
     @include propiedades-texto ($fuente2,40px,$color-fuente);
     @extend h2;

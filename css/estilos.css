@@ -250,7 +250,7 @@ h1 {
   font-weight: bold;
   margin-right: 5px; }
 
-h2, h3, h4, .titulo, .subtitulo, .texto-musica, .titulo-index, .subtitulo-index, .titulo-galeria, .subtitulo-musica {
+h2, h3, h4, .titulo, .subtitulo, .texto-musica, #subtitulo-tienda2, .titulo-index, .subtitulo-index, .titulo-galeria, .subtitulo-musica {
   font-family: "Abril Fatface", cursive;
   font-size: 20rem;
   color: white;
@@ -310,6 +310,13 @@ h4 {
   opacity: 1;
   background-color: black;
   opacity: 0.8;
+  border: none; }
+
+#subtitulo-tienda2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 20px;
+  color: white;
+  opacity: 1;
   border: none; }
 
 .titulo-index {
@@ -455,7 +462,7 @@ a.socialIcon:hover, .socialHoverClass {
   .home-div1 {
     justify-content: center;
     align-content: center; }
-    .home-div1 h2, .home-div1 h3, .home-div1 h4, .home-div1 .titulo, .home-div1 .subtitulo, .home-div1 .texto-musica, .home-div1 .titulo-index, .home-div1 .subtitulo-index, .home-div1 .titulo-galeria, .home-div1 .subtitulo-musica {
+    .home-div1 h2, .home-div1 h3, .home-div1 h4, .home-div1 .titulo, .home-div1 .subtitulo, .home-div1 .texto-musica, .home-div1 #subtitulo-tienda2, .home-div1 .titulo-index, .home-div1 .subtitulo-index, .home-div1 .titulo-galeria, .home-div1 .subtitulo-musica {
       color: black; }
     .home-div1 h3 {
       color: black; }
